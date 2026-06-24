@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postreando - Franquicias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <a href="/index.html" class="logo-link">
+          <img src="/logo.png" alt="Postreando Logo" class="logo" />
+        </a>
+        <nav class="nav-links">
+          <a href="/index.html">Inicio</a>
+          <a href="/nosotros.html">Nosotros</a>
+          <a href="/franquicias.html" class="active">Franquicias</a>
+          <a href="/especialidades.html">Especialidades</a>
+          <a href="/contacto.html" class="btn-nav">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" style="min-height: 40vh;">
+        <div class="hero-bg-image" style="background-image: url('/banner_bg.png'); background-position: top;"></div>
+        <div class="hero-overlay" style="background: linear-gradient(rgba(225,66,144,0.8), rgba(0,136,189,0.6));"></div>
+        <div class="container hero-content text-center">
+          <div class="hero-text full-width">
+            <h1 class="text-white">Nuestras Franquicias</h1>
+            <p class="text-light">Encuentra tu sucursal más cercana</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding">
+        <div class="container">
+          <div class="franchise-list">
+            <!-- Store 1 -->
+            <div class="franchise-card">
+              <img src="/cake.png" alt="Sucursal Centro" style="object-fit: contain; background: var(--color-surface); padding: 1rem;" />
+              <div class="franchise-info">
+                <h3>Sucursal Centro Histórico</h3>
+                <p><strong>Dirección:</strong> Av. Principal #101, Col. Centro</p>
+                <p><strong>Horario:</strong> Lunes a Domingo, 8:00 AM - 9:00 PM</p>
+                <p><strong>Teléfono:</strong> +52 222 123 4567</p>
+                <a href="/contacto.html" class="text-link">Contactar Sucursal</a>
+              </div>
+            </div>
+
+            <!-- Store 2 -->
+            <div class="franchise-card">
+              <img src="/tarta.png" alt="Sucursal Sur" />
+              <div class="franchise-info">
+                <h3>Sucursal Municipio Libre (Matriz)</h3>
+                <p><strong>Dirección:</strong> Blvd. Municipio Libre #11, Col. 16 de Septiembre Sur</p>
+                <p><strong>Horario:</strong> Lunes a Domingo, 9:00 AM - 10:00 PM</p>
+                <p><strong>Teléfono:</strong> +52 222 671 4666</p>
+                <a href="/contacto.html" class="text-link">Contactar Sucursal</a>
+              </div>
+            </div>
+
+            <!-- Store 3 -->
+            <div class="franchise-card">
+              <img src="/milkshake.png" alt="Sucursal Norte" />
+              <div class="franchise-info">
+                <h3>Sucursal Norte</h3>
+                <p><strong>Dirección:</strong> Plaza Comercial Norte, Local 5</p>
+                <p><strong>Horario:</strong> Lunes a Domingo, 10:00 AM - 8:00 PM</p>
+                <p><strong>Teléfono:</strong> +52 222 987 6543</p>
+                <a href="/contacto.html" class="text-link">Contactar Sucursal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <img src="/logo.png" alt="Postreando Logo" class="footer-logo" />
+        </div>
+        <div class="footer-links">
+          <h4>Módulos</h4>
+          <ul>
+            <li><a href="/nosotros.html">Nosotros</a></li>
+            <li><a href="/franquicias.html">Franquicias</a></li>
+            <li><a href="/especialidades.html">Especialidades</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Postreando. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

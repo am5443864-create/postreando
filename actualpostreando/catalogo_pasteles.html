@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postreando - Catálogo de Pasteles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <a href="/index.html" class="logo-link">
+          <img src="/logo.png" alt="Postreando Logo" class="logo" />
+        </a>
+        <nav class="nav-links">
+          <a href="/index.html">Inicio</a>
+          <a href="/nosotros.html">Nosotros</a>
+          <a href="/franquicias.html">Franquicias</a>
+          <a href="/especialidades.html" class="active">Especialidades</a>
+          <a href="/contacto.html" class="btn-nav">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" style="min-height: 30vh;">
+        <div class="hero-bg-image" style="background-image: url('/chocolate_cake.png'); background-position: center; filter: brightness(0.6);"></div>
+        <div class="hero-overlay" style="background: rgba(225,66,144,0.4);"></div>
+        <div class="container hero-content text-center">
+          <div class="hero-text full-width">
+            <h1 class="text-white">Catálogo de Pasteles</h1>
+            <a href="/especialidades.html" class="text-light" style="text-decoration: underline;">&larr; Volver a Especialidades</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding">
+        <div class="container">
+          <div class="product-grid">
+            <div class="product-card">
+              <div class="card-image"><img src="/chocolate_cake.png" alt="Pastel de Chocolate" /></div>
+              <div class="card-content">
+                <h3>Delirio de Chocolate</h3>
+                <p>Bizcocho húmedo de cacao con glaseado de chocolate amargo.</p>
+                <div class="price">$450 MXN</div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="card-image"><img src="/strawberry_cake.png" alt="Pastel de Fresa" /></div>
+              <div class="card-content">
+                <h3>Fresas con Crema</h3>
+                <p>Capas de vainilla, crema batida y abundantes fresas.</p>
+                <div class="price">$420 MXN</div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="card-image"><img src="/cake.png" alt="Pastel Clásico" style="object-fit: contain; padding: 2rem;"/></div>
+              <div class="card-content">
+                <h3>Vainilla Tradicional</h3>
+                <p>La receta clásica que encanta a todos.</p>
+                <div class="price">$380 MXN</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <img src="/logo.png" alt="Postreando Logo" class="footer-logo" />
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
