@@ -127,3 +127,4 @@ h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--color-secondary)
   .nav-links { display: none; }
   .features-grid { grid-template-columns: 1fr; }
 }
+
