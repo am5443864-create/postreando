@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postreando - Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <a href="/index.html" class="logo-link">
+          <img src="/logo.png" alt="Postreando Logo" class="logo" />
+        </a>
+        <nav class="nav-links">
+          <a href="/index.html">Inicio</a>
+          <a href="/nosotros.html">Nosotros</a>
+          <a href="/franquicias.html">Franquicias</a>
+          <a href="/especialidades.html">Especialidades</a>
+          <a href="/contacto.html" class="active btn-nav">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" style="min-height: 40vh;">
+        <div class="hero-bg-image" style="background-image: url('/banner_bg.png'); background-position: center; filter: grayscale(50%);"></div>
+        <div class="hero-overlay" style="background: rgba(0,136,189,0.8);"></div>
+        <div class="container hero-content text-center">
+          <div class="hero-text full-width">
+            <h1 class="text-white">Contáctanos</h1>
+            <p class="text-light">Estamos aquí para escucharte y tomar tu pedido.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding" style="background: var(--color-surface);">
+        <div class="container split-layout">
+          <div class="contact-info">
+            <h2>Ponte en contacto</h2>
+            <p>Si tienes dudas sobre nuestras franquicias, quieres realizar un pedido especial o simplemente enviarnos tus comentarios, llena el formulario y te responderemos a la brevedad.</p>
+            <br>
+            <h3>Soporte General</h3>
+            <p><strong>Correo:</strong> soportefusionag@gmail.com</p>
+            <p><strong>Teléfono:</strong> +52 222 671 4666</p>
+            <br>
+            <h3>Síguenos</h3>
+            <p>@PostreandoPuebla</p>
+          </div>
+          <div class="contact-form">
+            <!-- Native HTML Form pointing to FormSubmit -->
+            <form action="https://formsubmit.co/soportefusionag@gmail.com" method="POST">
+              <!-- Honeypot para evitar spam -->
+              <input type="text" name="_honey" style="display:none">
+              <!-- Página de agradecimiento (opcional) o cerrar captcha -->
+              <input type="hidden" name="_captcha" value="false">
+              <!-- Redirigir a la misma página luego de enviar -->
+              <input type="hidden" name="_next" value="http://localhost:5173/contacto.html?sent=true">
+              <input type="hidden" name="_subject" value="Nuevo mensaje de Postreando Web">
+
+              <div class="form-group">
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" name="name" required placeholder="Tu nombre" />
+              </div>
+              <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="tu@correo.com" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject" name="subject" required placeholder="Pedido, Franquicia, Duda..." />
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" required placeholder="Escribe tu mensaje aquí..."></textarea>
+              </div>
+              <button type="submit" class="cta-button primary" style="width: 100%; border:none; cursor:pointer;">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <img src="/logo.png" alt="Postreando Logo" class="footer-logo" />
+        </div>
+        <div class="footer-links">
+          <h4>Módulos</h4>
+          <ul>
+            <li><a href="/nosotros.html">Nosotros</a></li>
+            <li><a href="/franquicias.html">Franquicias</a></li>
+            <li><a href="/especialidades.html">Especialidades</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Postreando. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+    <script>
+      // Simple alert if URL has ?sent=true
+      if (window.location.search.includes('sent=true')) {
+        alert('¡Mensaje enviado correctamente! Nos pondremos en contacto contigo.');
+      }
+    </script>
+  </body>
+</html>

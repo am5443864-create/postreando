@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postreando - Especialidades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      .category-card { display: flex; align-items: center; background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); margin-bottom: 4rem; transition: transform 0.3s ease; }
+      .category-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+      .category-card:nth-child(even) { flex-direction: row-reverse; }
+      .cat-image { flex: 1; height: 400px; overflow: hidden; }
+      .cat-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+      .category-card:hover .cat-image img { transform: scale(1.05); }
+      .cat-content { flex: 1; padding: 4rem; text-align: center; }
+      .cat-content h2 { font-size: 3rem; margin-bottom: 1rem; color: var(--color-primary); }
+      .cat-content p { font-size: 1.2rem; color: var(--color-text-light); margin-bottom: 2rem; }
+      @media (max-width: 992px) {
+        .category-card, .category-card:nth-child(even) { flex-direction: column; }
+        .cat-image { height: 300px; width: 100%; }
+        .cat-content { padding: 2rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <a href="/index.html" class="logo-link">
+          <img src="/logo.png" alt="Postreando Logo" class="logo" />
+        </a>
+        <nav class="nav-links">
+          <a href="/index.html">Inicio</a>
+          <a href="/nosotros.html">Nosotros</a>
+          <a href="/franquicias.html">Franquicias</a>
+          <a href="/especialidades.html" class="active">Especialidades</a>
+          <a href="/contacto.html" class="btn-nav">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" style="min-height: 40vh;">
+        <div class="hero-bg-image" style="background-image: url('/banner_bg.png'); background-position: center;"></div>
+        <div class="hero-overlay" style="background: rgba(0,0,0,0.5);"></div>
+        <div class="container hero-content text-center">
+          <div class="hero-text full-width">
+            <h1 class="text-white">Menú de Especialidades</h1>
+            <p class="text-light">Descubre las deliciosas categorías que tenemos para ti.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding" style="background: var(--color-surface);">
+        <div class="container">
+          
+          <!-- Category 1: Pasteles -->
+          <div class="category-card">
+            <div class="cat-image"><img src="/chocolate_cake.png" alt="Categoría Pasteles" /></div>
+            <div class="cat-content">
+              <h2>Pasteles</h2>
+              <p>Conoce nuestro menú de pasteles, elaborados artesanalmente con ingredientes de la más alta calidad.</p>
+              <a href="/catalogo_pasteles.html" class="cta-button primary">Ver Catálogo de Pasteles</a>
+            </div>
+          </div>
+
+          <!-- Category 2: Frappes -->
+          <div class="category-card">
+            <div class="cat-image"><img src="/milkshake.png" alt="Categoría Frappes" /></div>
+            <div class="cat-content">
+              <h2>Frappés</h2>
+              <p>Conoce nuestro menú de frappés y bebidas heladas, la compañía perfecta para tu postre.</p>
+              <a href="/catalogo_frappes.html" class="cta-button primary">Ver Catálogo de Frappés</a>
+            </div>
+          </div>
+
+          <!-- Category 3: Tartas -->
+          <div class="category-card">
+            <div class="cat-image"><img src="/tarta.png" alt="Categoría Tartas" /></div>
+            <div class="cat-content">
+              <h2>Tartas</h2>
+              <p>Conoce nuestro menú de tartas crujientes con frutas de temporada y deliciosos rellenos.</p>
+              <a href="/catalogo_tartas.html" class="cta-button primary">Ver Catálogo de Tartas</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <img src="/logo.png" alt="Postreando Logo" class="footer-logo" />
+        </div>
+        <div class="footer-links">
+          <h4>Módulos</h4>
+          <ul>
+            <li><a href="/nosotros.html">Nosotros</a></li>
+            <li><a href="/franquicias.html">Franquicias</a></li>
+            <li><a href="/especialidades.html">Especialidades</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Postreando. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

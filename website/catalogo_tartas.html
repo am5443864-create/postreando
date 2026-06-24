@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postreando - Catálogo de Tartas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <a href="/index.html" class="logo-link">
+          <img src="/logo.png" alt="Postreando Logo" class="logo" />
+        </a>
+        <nav class="nav-links">
+          <a href="/index.html">Inicio</a>
+          <a href="/nosotros.html">Nosotros</a>
+          <a href="/franquicias.html">Franquicias</a>
+          <a href="/especialidades.html" class="active">Especialidades</a>
+          <a href="/contacto.html" class="btn-nav">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" style="min-height: 30vh;">
+        <div class="hero-bg-image" style="background-image: url('/tarta.png'); background-position: center; filter: brightness(0.6);"></div>
+        <div class="hero-overlay" style="background: rgba(225,66,144,0.4);"></div>
+        <div class="container hero-content text-center">
+          <div class="hero-text full-width">
+            <h1 class="text-white">Catálogo de Tartas</h1>
+            <a href="/especialidades.html" class="text-light" style="text-decoration: underline;">&larr; Volver a Especialidades</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding">
+        <div class="container">
+          <div class="product-grid">
+            <div class="product-card">
+              <div class="card-image"><img src="/tarta.png" alt="Tarta de Frutas" /></div>
+              <div class="card-content">
+                <h3>Tarta Frutal</h3>
+                <p>Base crujiente, crema pastelera y fruta fresca de temporada.</p>
+                <div class="price">$250 MXN</div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="card-image"><img src="/tarta.png" alt="Tarta Limon" style="filter: hue-rotate(90deg);" /></div>
+              <div class="card-content">
+                <h3>Tarta de Limón con Merengue</h3>
+                <p>El equilibrio perfecto entre acidez y dulzura.</p>
+                <div class="price">$220 MXN</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <img src="/logo.png" alt="Postreando Logo" class="footer-logo" />
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
